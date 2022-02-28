@@ -1,6 +1,5 @@
 package com.rechit.githubuserapp
 
-import android.graphics.drawable.Drawable
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
@@ -11,7 +10,7 @@ data class User(
     var avatar: Int,
     var location: String,
     var company: String,
-    var following: Int,
-    var repository: Int,
-    var follower: Int
+    var following: String,
+    var repository: String,
+    var follower: String
 ): Parcelable

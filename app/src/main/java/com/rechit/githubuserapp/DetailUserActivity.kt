@@ -22,8 +22,8 @@ class DetailUserActivity : AppCompatActivity() {
         binding.imgDetailAvatar.setImageResource(data.avatar)
         binding.tvLocation.text = data.location
         binding.tvCompany.text = data.company
-        binding.tvFollowing.inputType = data.following
-        binding.tvRepository.inputType = data.repository
-        binding.tvFollower.inputType = data.follower
+        binding.tvFollowing.text = data.following
+        binding.tvRepository.text = data.repository
+        binding.tvFollower.text = data.follower
     }
 }

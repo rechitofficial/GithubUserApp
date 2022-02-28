@@ -2,6 +2,18 @@
     <string name="app_name">GithubUserApp</string>
     <string name="name">Name</string>
     <string name="user_name">Username</string>
+    <string name="company_title">Company :</string>
+    <string name="respository">0</string>
+    <string name="following">18</string>
+    <string name="follower">9</string>
+    <string name="company">Rech</string>
+    <string name="following_title">Following:</string>
+    <string name="follower_title">Follower:</string>
+    <string name="repository_title">Repository:</string>
+    <string name="location">Indonesia</string>
+    <string name="location_title">Location :</string>
+    <string name="username_detail">Username</string>
+    <string name="name_detail">Farhan Mufti Hilmy</string>
 
     <string-array name="username">
         <item>JakeWharton</item>

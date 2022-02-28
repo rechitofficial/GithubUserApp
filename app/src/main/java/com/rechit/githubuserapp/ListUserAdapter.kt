@@ -25,6 +25,7 @@ class ListUserAdapter(private val listUser: ArrayList<User>) : RecyclerView.Adap
             binding.tvItemName.text = name
             binding.tvItemUsername.text = user_name
             binding.imgAvatar.setImageResource(avatar)
+            // move data with parcelable when an item is clicked
             holder.itemView.setOnClickListener {
                 val moveIntent = Intent(holder.itemView.context, DetailUserActivity::class.java)
                 val data = User(
