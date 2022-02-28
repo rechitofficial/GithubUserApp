@@ -9,6 +9,7 @@ import com.rechit.githubuserapp.databinding.ItemRowUserBinding
 
 class ListUserAdapter(private val listUser: ArrayList<User>) : RecyclerView.Adapter<ListUserAdapter.ListViewHolder>() {
 
+
     class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val binding = ItemRowUserBinding.bind(itemView)
     }
@@ -29,7 +30,12 @@ class ListUserAdapter(private val listUser: ArrayList<User>) : RecyclerView.Adap
                 val data = User(
                     name,
                     user_name,
-                    avatar
+                    avatar,
+                    listUser[position].location,
+                    listUser[position].company,
+                    listUser[position].following,
+                    listUser[position].repository,
+                    listUser[position].follower
                 )
                 moveIntent.putExtra(DetailUserActivity.EXTRA_NAME, data)
                 holder.itemView.context.startActivity(moveIntent)
@@ -40,4 +46,5 @@ class ListUserAdapter(private val listUser: ArrayList<User>) : RecyclerView.Adap
     override fun getItemCount(): Int {
         return listUser.size
     }
+
 }
