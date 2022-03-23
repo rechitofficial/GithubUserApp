@@ -4,7 +4,7 @@ import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-data class Follower (
+data class Following (
     var name: String = "",
     var username: String = "",
     var avatar: String = "",
